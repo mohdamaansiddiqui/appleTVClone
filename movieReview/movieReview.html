@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Page</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/ce16d2eaf5.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- style link of slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./movieReview.css">
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="posterImage">
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/-KY47T4V4upXUzkPgeVo9g/1679x945sr.webp" class="img-fluid"
+            alt="Movie Poster" id="movieImageBeforeResponsive">
+        <img src="https://is3-ssl.mzstatic.com/image/thumb/OPgtbnIJCZnnZqcwmf78eQ/800x1420tc.jpg" class="img-fluid"
+            alt="Movie Poster" id="mobileViewImage">
+        <video autoplay loop muted plays-inline id="videoOfTheMovie">
+            <source src="" type="video/mp4">
+    </div>
+    <div id="movieNameContainer">
+       
+    </div>
+
+    <div id="parentDiv">
+        <div id="parentContainer">
+            <div id="leftDiv">
+                <p id="appleTv" style="color: white;">7 days free, then ₹&nbsp;99.00/month.</p>
+                <div id="buttons">
+                    <button id="btn"><b>Start Free Trial</b></button>
+                    <button id="btn"> <i class="fa-solid fa-plus"></i> <b> Add to Up
+                            Next</b></button>
+                </div>
+            </div>
+            <div id="middleDiv">
+                <div id="middleDivTop">
+                    <p id="content">From Skydance Animation comes the story of Sam Greenfield, the unluckiest person in
+                        the world! Suddenly finding herself
+                        in the never-before-seen Land of Luck, she must unite with the magical creatures there to turn
+                        her luck around.
+                    </p>
+                </div>
+                <div id="middleDivBottom">
+                    <div id="leftText">
+                        <p>Animation - 2021</p>
+                    </div>
+                    <div id="rightText">
+                        <img src="https://tv.apple.com/assets/badges/common-sense-onDark-small@2x-f3312938f6b7188fbf37701e3557e399.png"
+                            class="img-fluid" alt="Tick mark" id="tickMarkImage">
+                        <span>13+</span>
+                        <span>U/A</span>
+                        <span>5+</span>
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%204K%20OnDark-c90195dae0171c69694b4d7386421ad8.svg"
+                            class="img-fluid" alt="4k button" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Dolby%20OnDark-2c6afeb5b02b2c48655606bd9d178bfd.svg"
+                            class="img-fluid" alt="dolby vision" id="dolby">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Atmos%20OnDark-007278edac4076aaf1bc01dedf68e3cd.svg"
+                            class="img-fluid" alt="dobly atom" id="dolby">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnDark-7b5b00df263bfee5af843510f708c307.svg"
+                            class="img-fluid" alt="cc" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnDark-4731d380509cdd9c3e59e73cb9dc09d5.svg"
+                            class="img-fluid" alt="ad" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnDark-45f29ce5e07128bf67d924a31a003cf3.svg"
+                            class="img-fluid" alt="sdh" id="imageIcons">
+                    </div>
+                </div>
+            </div>
+            <div id="rightDiv">
+                <p id="characters"><span id="oneWord">Starring </span>Eva Noblezada, Simon Pegg, Jane Fonda</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end of the swiper images -->
+    <div id="trailersMainDiv">
+        <p id="trailerHeading" style="margin-top: 30px;"><b>Trailers</b></p>
+        <div id="smallDivsTrailers">
+            <div id="divForTrailer">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/1C0SB8K31ydUJAYtrb9q-g/500x282.webp"
+                    class="img-fluid" alt="ad" id="trailerImages">
+                <span id="trailerTitle"> Trailer</span>
+            </div>
+            <div id="divForTrailer1">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/iHn2-yDKJpeorQh7tNMMsQ/300x169.webp"
+                    class="img-fluid" alt="ad" id="trailerImages1">
+                <span id="trailerTitle"> Teaser Trailer</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end of trailer div -->
+    <!-- start of related div -->
+    <section id="relatedMovies">
+        <span id="relatedHeading"><b>Related</b></span>
+        <div class="row anotherSlider">
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/HRBOk7ebJJpnufwvrhXLUw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- 2nd another card -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/d9YbWy1AerS9BZSiyoQ0Lw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!--  -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/7bpqOTRk7jFXrAFvrvx-MQ/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/W6FvPwOx3N_jEP0C8fu95w/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/kdFsyPb7mK7T8-k6YrXdYQ/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/HGw-QzsXlYUDp68NCOvxZQ/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/wB0ypiax7KegkM2a0X_m8g/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/y7Tj8Ig4DTzSgbm4DcoFyw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/f5MpOY_Tglwyv9W9lwutqg/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/P-1f-E_Qew_9syoQd34Wlw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/lQggjzswj8ZD1hym1_oVGQ/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/6f5y-DYx9UvvcJ-gpqAufw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/D4_zxFuR5bII3CoTB-DA8g/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/qAVZkxDvQKGGAE8y9mFBZg/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/nTZk4gGUlYYK1YMyQ0mPow/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!-- end of related movies div -->
+    <!-- start of displaying cast and crew -->
+    <p id="castAndCrewHeading" style="margin-left: 35px;"><b>Cast & Crew</b></p>
+    <div id="castAndCrewMainDiv">
+        <div id="containerDivCastAndCrew">
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/d5FFxfARywg8qv7FW8JMTA/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top: 5px; margin-bottom: 2px;">Eva Noblezada</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Sam</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/-MhjO_qxeHOgHNBaRs3ESg/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Simon Pegg
+                </p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Bob</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/TC7v7BNfv7Acczp_IMUoXg/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Jane Fonda</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Dragon</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Hdeks6Z2yXTUn4pa3MeLSg/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Whoopi Goldberg</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Captain</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/wPlsVbLuSSdt26BiMxUFVw/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top: 5px; margin-bottom: 2px;">Colin O'Donoghue</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Gerry</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/lkV-qjDHm_nU3rfai9rrUg/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Lil Rel Howery
+                </p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Marvin</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Z-vTMNMgSxUbnRWeapMJqg/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Flula Borg</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Jeff the Unicorn</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/hpOTOE93BVGOMOcmqbVISQ/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">John Ratzenberger</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Rootie</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/nUHyQ4bpI-Ru4WLjXZN15g/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Adelynn Spoon</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Hazel</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/v2l70AeYMke-H42p4YNeLA/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Peggy Holmes</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Director</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/_l1SRbDIVaILZcPNUm6VWg/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">John Lasseter</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/DnC6CTz6ShCfTC6hl7CSFw/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">David Ellison</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/RiALYJ7-F3I4Nf3ddKntwg/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Dana Goldberg</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/bv3K5wNPWYgvjfCzVRKJDA/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">David Eisenmann</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/I3gojJdi8-zajIF8gXB4eA/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Kiel Murray</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Writer</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end of displaying cast and crew -->
+    <div id="trailersMainDiv">
+        <span id="trailerHeading"><b>How to Watch</b></span>
+        <div id="appleTvMainDiv">
+            <div id="appleTvDiv">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" class="img-fluid"
+                    alt="ad" id="appleTvPlus">
+                <p id="startFreeTrail">Start Free Trial</p>
+            </div>
+            <span id="freeTrailText">7 days free, then ₹ 99.00/month.</span>
+        </div>
+    </div>
+    <!-- end of apple tv logo -->
+    <!-- starting of footer page -->
+    <div id="footerPage">
+        <p id="about"><b>About</b></p>
+        <div id="footerTopPart">
+            <div id="invasionDiv">
+                <p id="invasionHeading"><b>Invasion</b></p>
+                <span style="font-size: 13px;">SCI-FI</span>
+                <p id="invasionContent" style="font-size: 15px;">Earth is visited by an alien species that threatens
+                    humanity's existence. Events
+                    unfold in real time through the eyes of five ordinary people across the globe as they struggle to
+                    make sense of the ch<span id="extraContent" style="color:rgb(227, 209, 209);">ao</span><span
+                        id="moreBtn">MORE</span>
+                </p>
+            </div>
+            <div id="invasionRightDiv">
+                <p id="invasionRightDivHeading">
+                    <img src="https://tv.apple.com/assets/badges/common-sense-onLight-small@2x-491e5ca16a8a47cc45cd0e2eb57818c6.png"
+                        class="img-fluid" alt="Tick mark" id="tickMarkImageInInvasion"> <b>14+</b>
+                </p>
+                <p id="commonSense" style="font-size: 13px;margin-top:-10px;margin-bottom:2px;">
+                    COMMON SENSE
+                </p>
+                <p id="commonSenseContent">Slow moving sci-fi drama has strong language, violence.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="footerBottomPart">
+            <div id="leftBottomPart">
+                <p id="information" style="margin-bottom: 1px;"><b>Information</b></p>
+                <p id="genre" style="margin-top: 5px;">Genre <br><span style="font-size:12px;">Sci-fi</span></p><br>
+                <p id="released" style="margin-top: -30px;">Released <br><span style="font-size:12px;">2021</span></p>
+                <br>
+                <p id="rated" style="margin-top: -30px;">Rated <br><span style="font-size:12px;">A</span></p><br>
+                <p id="regionOfOrigin" style="margin-top: -30px;">Region of Origin <br><span
+                        style="font-size:12px;">United States</span></p>
+            </div>
+            <div id="middleBottomPart" style="padding-left:15px;">
+                <p id="languages" style="margin-bottom: 4px;"><b>Languages</b></p>
+                <p id="originalAudio">Original Audio <br><span style="font-size: 12px;">English</span></p><br>
+                <p id="audio" style="margin-top: -30px;">Audio <br><span style="font-size: 12px;">English (AD, AAC,
+                        Dolby 5.1, Dolby Atmos), and 9
+                        more...</span></p><br>
+                <p id="subtitles" style="margin-top: -30px;">Subtitles <br><span style="font-size: 12px;">English (CC,
+                        SDH), and 40 more...</span>
+                </p>
+            </div>
+            <div id="rightBottomPart" style="padding-left: 25px;">
+                <p id="accessibility" style="margin-bottom: 4px;"><b>Accessibility</b></p>
+                <span><img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                        class="img-fluid" alt="cc" id="descriptionIcons"></span><br>
+                <span id="ccText" style="font-size: 13px;">Closed captions refer to subtitles in
+                    available languages
+                    with the addition of
+                    relevant non-dialogue information.</span><br>
+                <span><img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                        class="img-fluid" alt="ad" id="descriptionIcons"></span><br>
+                <span id="adText" style="font-size: 13px;">Audio descriptions (AD) refer to a narration track describing
+                    what is happening on
+                    screen to provide context for those who are blind or have low vision.</span>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div id="copyrightIndia" style="display: flex; justify-content: space-between;">
+            <p id="copyrightText" style="padding-left: 30px; font-size:13px; color: rgb(104, 94, 94);">
+                Copyright © 2022 Apple Inc. All Rights Reserved.
+            </p>
+            <p id="indiaText" style="margin-left: 70%; font-size: 12px;">India</p><br>
+        </div>
+        <span id="internetTerms" style="padding-left: 30px;font-size:13px; color: black;">
+            Internet Service Terms &nbsp; Apple TV & Privacy &nbsp; Cookie Warning &nbsp; Support
+        </span>
+    </div>
+    <!-- code for popup box -->
+    <div id="popUp">
+        <div id="invasionInPopUp">
+            <span id="closeBtnForPopUp" onclick="closeBtn()"><i class="fa-solid fa-xmark fa-xl"></i></span>
+            <p id="invasionHeadingInPopUp" style="font-size: 20px; margin-bottom: -1px;"><b>Foundation</b></p>
+            <p id="scifiInPopUp">Sci-fi</p>
+            <p id="contentInPopUP">Earth is visited by an alien species that threatens
+                humanity's existence. Events
+                unfold in real time through the eyes of five ordinary people across the globe as they struggle to
+                make sense of the chaos unraveling around them.</p>
+        </div>
+    </div>
+    <!-- end of whole html -->
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        // another slider
+        $('.anotherSlider').slick({
+            dots: false,
+            infinite: true,
+            speed: 200,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+</body>
+
+</html>
+<script type="module" src="./movieReview.js"></script>

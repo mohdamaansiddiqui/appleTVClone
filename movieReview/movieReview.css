@@ -1,0 +1,937 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "-apple-system",
+        BlinkMacSystemFont,
+        "-webkit-system-font",
+        "Malgun Gothic",
+        "Segoe UI",
+        "Helvetica Neue",
+        Helvetica,
+        sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: black;
+    z-index: 5;
+    justify-content: space-between;
+    padding: 2px;
+    padding-top: 8px;
+  
+  }
+  
+  #logo>a>img {
+    margin-top: 7px;
+    margin-left: 35px;
+    width: 73px;
+  }
+  
+  input {
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 20px;
+  
+  
+  
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding-left: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right:23px;
+  
+  
+  }
+  
+  
+  #user_nav {
+  
+    padding: 10px;
+    display: flex;
+    margin-right: 30px;
+  
+  
+  }
+  
+  #user_nav>img {
+    width: 35px;
+  
+  }
+  
+  #user_nav>img:hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  #user_nav>button {
+    position: absolute;
+    margin-left: 260px;
+    background-color: black;
+    border: 0px;
+  }
+  
+  #user_nav>button:hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  .landing_navbar_button {
+    border: 0.5px;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    background-color: #007aff;
+    border-radius: 5px;
+    /* margin: 7px; */
+    margin-left: 10px;
+    width: 60px;
+    align-items: center;
+  }
+  .d-flex {
+    display: flex !important;
+  }
+  button {
+    text-decoration: none;
+  }
+  #logo {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  #user_nav i {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  
+  #user_nav i:hover {
+  
+    color: rgb(225, 91, 91);
+    cursor: pointer;
+  
+  }
+
+/* body {
+    background-color: black;
+} */
+
+.posterImage {
+    position: relative;
+}
+
+#videoOfTheMovie {
+    position: relative;
+    right: 0px;
+    left: 0;
+    z-index: -1;
+    /* display: none; */
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoOfTheMovie {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoOfTheMovie {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.movieName {
+    position: absolute;
+    width: 22%;
+    top: 10%;
+    left: 3%;
+}
+
+#parentContainer {
+    top: 93%;
+    left: 3%;
+    width: 98%;
+    display: flex;
+    backdrop-filter: blur(2px);
+    height: 28%;
+}
+
+#leftDiv {
+    position: absolute;
+    margin-top: -15%;
+    width: 20%;
+    margin-left: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+#appleTv {
+    color: rgb(232, 225, 225);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#buttons {
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+}
+
+#btn {
+    background-color: whitesmoke;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 12px 8px;
+    border-radius: 8px;
+}
+
+#middleDiv {
+    position: absolute;
+    margin-top: -13%;
+    width: 55%;
+    margin-left: 25%;
+    font-size: 15px;
+}
+
+#content {
+    color: white;
+}
+
+#middleDivBottom {
+    display: flex;
+    gap: 10px;
+    color: rgb(214, 195, 195);
+    margin-top: 40px;
+    font-size: 13px;
+    background: center;
+}
+
+#tickMarkImage {
+    width: 5%;
+    margin: auto;
+}
+
+
+#dolby {
+    width: 8%;
+}
+
+#imageIcons {
+    width: 6%;
+}
+
+#rightDiv {
+    width: 40%;
+    margin: auto;
+    margin-top: -13%;
+    margin-left: 80%;
+    color: white;
+}
+
+#oneWord {
+    color: rgb(180, 166, 166);
+}
+
+/* styling for trailers  */
+#trailersMainDiv {
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+
+#smallDivsTrailers {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+}
+
+#divForTrailer {
+    display: grid;
+}
+#divForTrailer1 {
+    display: grid;
+}
+
+#trailerImages {
+    min-width: 300px;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#trailerImages1 {
+    min-width: 300px;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#smallDivsTrailers::-webkit-scrollbar {
+    display: none;
+}
+
+#trailerImages:hover {
+    opacity: 0.9;
+}
+
+#relatedHeading {
+    margin-left: 35px;
+}
+
+#trailerTitle {
+    font-size: 14px;
+}
+
+/* related movies styling */
+
+.anotherSlider .card {
+    padding: 10px;
+    /* width: 25%; */
+    /* border: 1px solid teal; */
+    border: none;
+}
+
+
+#relatedMovies {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.anotherSlider {
+    /* width: 98%; */
+    margin: auto;
+    max-height: 250px;
+    margin-top: 10px;
+    /* border: 1px solid blue; */
+}
+
+#relatedMovieImage {
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+#relatedDotsSymbol {
+    position: absolute;
+    top: 75%;
+    left: 85%;
+    opacity: -1;
+    background-color: grey;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#relatedDotsSymbol:hover {
+    opacity: 1;
+    background-color: rgb(19, 160, 216);
+}
+
+/* end of styling for related movies */
+#appleTvMainDiv {
+    width: 22%;
+    text-align: center;
+}
+
+#appleTvDiv {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(225, 217, 217);
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#appleTvPlus {
+    margin-bottom: 25px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#startFreeTrail {
+    margin-left: 20px;
+    padding-bottom: 25px;
+}
+
+#freeTrailText {
+    font-size: 12px;
+}
+
+#footerPage {
+    margin-top: 30px;
+    background-color: rgb(247, 245, 245);
+}
+
+#footerBottomPart {
+    display: flex;
+}
+
+#footerTopPart {
+    display: flex;
+    width: 96%;
+    gap: 20px;
+    margin: auto;
+}
+
+#about {
+    margin-left: 40px;
+    padding-top: 3%;
+}
+
+#moreBtn {
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+}
+
+#invasionDiv {
+    width: 32%;
+    padding: 10px 5px 10px 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#invasionRightDiv {
+    width: 32%;
+    padding: 10px 5px 10px 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#invasionHeading {
+    margin-bottom: -2px;
+}
+
+#tickMarkImageInInvasion {
+    width: 5%;
+}
+
+#footerBottomPart {
+    width: 96%;
+    margin: auto;
+}
+
+#leftBottomPart,
+#middleBottomPart,
+#rightBottomPart {
+    width: 32%;
+}
+
+#descriptionIcons {
+    width: 6%;
+}
+
+/* styling for cast and crew */
+#castAndCrewMainDiv {
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+#containerDivCastAndCrew {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#containerDivCastAndCrew::-webkit-scrollbar {
+    display: none;
+}
+
+#divForCastAndCrew {
+    width: 250px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#CrewImage {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#popUp {
+    width: 98vw;
+    height: 150vh;
+    position: absolute;
+    top: 230%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#invasionInPopUp {
+    padding: 35px 20px 20px 35px;
+    width: 41%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#closeBtnForPopUp {
+    position: absolute;
+    top: 5%;
+    left: 15px;
+    cursor: pointer;
+}
+
+#parentDiv {
+    display: block;
+}
+
+/* media queries */
+@media screen and (min-width:1316px) {
+    #videoOfTheMovie {
+        display: block;
+    }
+
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1002px) and (max-width:1317px) {
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #movieImageBeforeResponsive {
+        display: block;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:670px) {
+    #appleTvDiv {
+        width: 250%;
+    }
+
+    #appleTvPlus {
+        width: 100%;
+    }
+
+    #freeTrailText {
+        display: inline-flex;
+        width: 200%;
+    }
+}
+
+@media screen and (min-width:801px)and (max-width:1003px) {
+    #movieImageBeforeResponsive {
+        display: block;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #leftDiv {
+        margin-top: -20%;
+    }
+
+    #leftText {
+        width: 20%;
+    }
+
+    #middleDivBottom {
+        margin-top: -5px;
+    }
+
+    #buttons {
+        font-size: 14px;
+    }
+
+    #middleDiv {
+        width: 50%;
+        margin-top: -18%;
+        margin-left: 27%;
+    }
+
+    #middleDivTop {
+        margin-bottom: -10px;
+        margin-top: 5px;
+    }
+
+    #rightDiv {
+        margin-top: -17%;
+    }
+}
+
+/* media query for movie image and movie name */
+#mobileViewImage {
+    display: none;
+}
+
+@media screen and (min-width:750px)and (max-width:800px) {
+    #vidoOfTheMovie {
+        display: none;
+    }
+
+    #movieImageBeforeResponsive {
+        display: block;
+    }
+
+    #leftDiv {
+        margin-top: -20%;
+    }
+
+    #leftText {
+        font-size: 12px;
+        width: 30%;
+    }
+
+    #middleDivBottom {
+        margin-top: -5px;
+    }
+
+    #buttons {
+        font-size: 12px;
+    }
+
+    #content {
+        font-size: 12px;
+    }
+
+    #middleDiv {
+        width: 50%;
+        margin-top: -18%;
+        margin-left: 27%;
+    }
+
+    #middleDivTop {
+        margin-bottom: -10px;
+        margin-top: 5px;
+    }
+
+    #characters {
+        font-size: 13px;
+    }
+
+    #rightDiv {
+        margin-top: -17%;
+    }
+}
+
+@media screen and (min-width:614px)and (max-width:749px) {
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #mobileViewImage {
+        display: block;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #movieNameImage {
+        max-width: 280px;
+    }
+
+    #appleTv {
+        display: none;
+    }
+
+    #leftDiv {
+        width: 35%;
+        margin-top: -36%;
+        margin-left: 35%;
+    }
+
+    #leftText {
+        display: none;
+    }
+
+    #buttons>#btn {
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    #content {
+        width: 170%;
+        margin-left: -38%;
+        margin-top: -6%;
+    }
+
+    #characters {
+        display: none;
+    }
+
+    #rightText {
+        margin: auto;
+        margin-left: -38%;
+        margin-top: -8%;
+    }
+}
+
+@media screen and (min-width:501px)and (max-width:615px) {
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #mobileViewImage {
+        display: block;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #movieNameImage {
+        max-width: 280px;
+    }
+
+    #appleTv {
+        display: none;
+    }
+
+    #leftDiv {
+        width: 35%;
+        margin-top: -48%;
+        margin-left: 35%;
+    }
+
+    #leftText {
+        display: none;
+    }
+
+    #buttons>#btn {
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    #content {
+        width: 170%;
+        margin-left: -38%;
+        margin-top: -20%;
+    }
+
+    #characters {
+        display: none;
+    }
+
+    #rightText {
+        margin: auto;
+        margin-left: -38%;
+        margin-top: -14%;
+    }
+}
+
+@media screen and (min-width:455px)and (max-width:500px) {
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #mobileViewImage {
+        display: block;
+    }
+
+    #movieNameImage {
+        max-width: 280px;
+    }
+
+    #appleTv {
+        display: none;
+    }
+
+    #leftDiv {
+        width: 40%;
+        margin-top: -55%;
+        margin-left: 35%;
+    }
+
+    #leftText {
+        display: none;
+    }
+
+    #buttons>#btn {
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    #content {
+        width: 170%;
+        margin-left: -38%;
+        margin-top: -30%;
+    }
+
+    #characters {
+        display: none;
+    }
+
+    #rightText {
+        margin: auto;
+        margin-left: -38%;
+        margin-top: -14%;
+    }
+}
+
+@media screen and (min-width:350px)and (max-width:455px) {
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #mobileViewImage {
+        display: block;
+    }
+
+    #movieNameImage {
+        max-width: 280px;
+    }
+
+    #appleTv {
+        display: none;
+    }
+
+    #leftDiv {
+        width: 40%;
+        margin-top: -70%;
+        margin-left: 35%;
+    }
+
+    #leftText {
+        display: none;
+    }
+
+    #buttons>#btn {
+        border: none;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    #content {
+        width: 170%;
+        margin-left: -38%;
+        margin-top: -56%;
+    }
+
+    #characters {
+        display: none;
+    }
+
+    #rightText {
+        margin: auto;
+        margin-left: -38%;
+        margin-top: -20%;
+    }
+
+    /* media query for related movies */
+    #relatedHeading {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:696px) and (max-width:950px) {
+    #smallDivsTrailers {
+        width: 100%;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #appleTvMainDiv {
+        width: 30%;
+        text-align: center;
+    }
+
+    #invasionDiv {
+        width: 35%;
+        padding: 10px 5px 10px 15px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    #invasionRightDiv {
+        width: 35%;
+        padding: 10px 5px 10px 15px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    #relatedHeading {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #relatedMovies {
+        margin-top: -10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #seasons {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:802px) {
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #footerTopPart {
+        display: block;
+    }
+
+    #invasionDiv {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #invasionRightDiv {
+        min-width: 100%;
+    }
+
+    #footerBottomPart {
+        display: block;
+    }
+
+    #middleBottomPart {
+        margin-left: -15px;
+    }
+
+    #rightBottomPart {
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    #descriptionIcons {
+        width: 3%;
+    }
+}

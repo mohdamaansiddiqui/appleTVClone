@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD PAYMENT</title>
+    <link rel="stylesheet" href="paymentGateway.css" />
+</head>
+<body>
+    <div id="create">
+        <form id="card">
+            <h1> CARD DETAILS</h1>
+            <label>Card Holder Name </label>
+            <input id="name" type="text" placeholder="Enter your Name"  required />
+            <label >Card number:</label>
+            <input id="num" inputmode="numeric" maxlength="16"  data-mask="0000 0000 0000 0000"  placeholder="Card Number"  required />
+            <div class="form-row">
+                <div class="form-group">
+                    <label id="label1">Expiry date:</label>
+                    <input id="date"  inputmode="numeric" maxlength="7"  name="expiry-data"  placeholder="00 / 0000" required />
+                </div>
+                <div class="form-group">
+                    <label id="label2">CVV</label><br>
+                    <input id="cvv"  inputmode="numeric" type="password" maxlength="3"  data-mask="000" placeholder="000" required />
+                </div>
+            </div>
+            <button id="proceed-btn" type="submit"> PAY NOW</a>  </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="paymentGateway.js"></script>

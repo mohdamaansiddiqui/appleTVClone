@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Review Page</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/ce16d2eaf5.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- style link of slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./seriesReview.css">
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="posterImage">
+        <img  src="https://is4-ssl.mzstatic.com/image/thumb/y-uJa9M08K9Qgi-Tf0E1NA/1679x945sr.webp" class="img-fluid"
+            alt="Movie Poster" id="movieImageBeforeResponsive">
+        <img src="https://is3-ssl.mzstatic.com/image/thumb/QYbnL_aapauuv-xOlcbS-w/800x1420tc.jpg" class="img-fluid"
+            alt="Movie Poster" id="mobileViewImage">
+        <video autoplay loop muted plays-inline id="videoOfTheMovie">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+    <div id="movieNameContainer">
+       
+    </div>
+    <div id="parentDiv">
+        <div id="parentContainer">
+            <div id="leftDiv">
+                <p id="appleTv"><b>Apple TV+</b></p>
+                <div id="buttons">
+                    <button id="btn"><i class="fa-sharp fa-solid fa-play"></i> <b> Play Free
+                            Episode</b></button>
+                    <button id="btn"><b>Start Free Trial</b></button>
+                    <button id="btn"> <i class="fa-solid fa-plus"></i> <b> Add to Up
+                            Next</b></button>
+                </div>
+            </div>
+            <div id="middleDiv">
+                <div id="middleDivTop">
+                    <p id="content">Based on the award-winning novels by Issac Asimov, Foundation chronicles a band of
+                        exiles on
+                        their monumental journey to save humanity and rebuild civilization amid the fall of the Galactic
+                        Empire.
+                    </p>
+                </div>
+                <div id="middleDivBottom">
+                    <div id="leftText">
+                        <p>Sci-Fi - 2021</p>
+                    </div>
+                    <div id="rightText">
+                        <img src="https://tv.apple.com/assets/badges/common-sense-onDark-small@2x-f3312938f6b7188fbf37701e3557e399.png"
+                            class="img-fluid" alt="Tick mark" id="tickMarkImage">
+                        <span>13+</span>
+                        <span>U/A</span>
+                        <span>16+</span>
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%204K%20OnDark-c90195dae0171c69694b4d7386421ad8.svg"
+                            class="img-fluid" alt="4k button" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Dolby%20OnDark-2c6afeb5b02b2c48655606bd9d178bfd.svg"
+                            class="img-fluid" alt="dolby vision" id="dolby">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Atmos%20OnDark-007278edac4076aaf1bc01dedf68e3cd.svg"
+                            class="img-fluid" alt="dobly atom" id="dolby">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnDark-7b5b00df263bfee5af843510f708c307.svg"
+                            class="img-fluid" alt="cc" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnDark-4731d380509cdd9c3e59e73cb9dc09d5.svg"
+                            class="img-fluid" alt="ad" id="imageIcons">
+                        <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnDark-45f29ce5e07128bf67d924a31a003cf3.svg"
+                            class="img-fluid" alt="sdh" id="imageIcons">
+                    </div>
+                </div>
+            </div>
+            <div id="rightDiv">
+                <p id="characters"><span id="oneWord">Starring </span>Jared Harris, Lee Pace, Lou LIobell</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="seasons">
+        <select id="season1">
+            
+            <option value="Season-1">Season-1</option>
+            <option value="Season-2">Season-2</option>
+        </select>
+        <!-- <div class="swiper mySwiper" id="seasonContainer"> -->
+        <div class="row slider">
+
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/nPVqAqCmnABmGDk8YXidgA/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season1MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 1</span>
+                        <p id="movieTitleName1"><b>Preparing to Live</b></p>
+                        <p id="movieDescription">
+                            The Foundation makes the long journey to Terminus as Gaal and Raych grow closer. The
+                            Empire faces a difficult decision.
+                        </p>
+                        <p id="movieTiming">1 hr Sept 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/S-RshnOWAbUZnVSOmT-wNw/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season2MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 2</span>
+                        <p id="movieTitleName2"><b>The Mathematician's Ghost</b></p>
+                        <p id="movieDescription">
+                            Brother Dusk reflects on his legacy as he prepares for ascension. The Foundation arrives
+                            on Terminus and finds a mysterious object.
+                        </p>
+                        <p id="movieTiming">49min 1 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/1tDYp-sMsAKTIwdWhpB6Zw/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season3MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 3</span>
+                        <p id="movieTitleName3"><b>Barbarians at the Gate</b></p>
+                        <p id="movieDescription">Salvor faces off with an enemy of the Empire Brothers Day and Dusk
+                            are ate odds, while Brother Dawn wrestles with his truth.</p>
+                        <p id="movieTiming">45 min 8 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/rMa5eHbRi2zWd0IykyBjcA/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season4MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 4</span>
+                        <p id="movieTitleName4"><b>The Emperor's Peace</b></p>
+                        <p id="movieDescription">
+                            Gaal Dornick leaves her life in Synnax behind when the galaxys greatest mathematician,
+                            Hari Seldon, invites her to Trantor.
+                        </p>
+                        <p id="movieTiming">50 min 24 Sept 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- another card -->
+            <!-- 1st half ie 4 images upto here -->
+            <!-- 5th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/R5gsmnTBGZHQ5cxC1d17Aw/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season5MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 5</span>
+                        <p id="movieTitleName5"><b>Upon Awakening</b></p>
+                        <p id="movieDescription">A flashback reveals the origin of Gaal's conflict between faith and
+                            science. The standoff on Terminus takes an unfortunate turn.</p>
+                        <p id="movieTiming">53 min 15 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 6th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/IhoZdRh5_H8tM1s2SDwylg/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season6MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 6</span>
+                        <p id="movieTitleName6"><b>Barbarians at the Gate</b></p>
+                        <p id="movieDescription">Salvor faces off with an enemy of the Empire Brothers Day and Dusk
+                            are ate odds, while Brother Dawn wrestles with his truth.</p>
+                        <p id="movieTiming">45 min 8 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 7th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/m_bYrZfZ4qhfHNiaWE91wA/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season7MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 7</span>
+                        <p id="movieTitleName7"><b>The Emperor's Peace</b></p>
+                        <p id="movieDescription">
+                            Gaal Dornick leaves her life in Synnax behind when the galaxys greatest mathematician,
+                            Hari Seldon, invites her to Trantor.
+                        </p>
+                        <p id="movieTiming">1hr 24 Sept 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 8th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/cR5xMUvIvPLD1A0RhZi46g/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season1MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 8</span>
+                        <p id="movieTitleName"><b>The Mathematician's Ghost</b></p>
+                        <p id="movieDescription">
+                            Brother Dusk reflects on his legacy as he prepares for ascension. The Foundation arrives
+                            on Terminus and finds a mysterious object.
+                        </p>
+                        <p id="movieTiming">49min 1 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!--9th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/DEUmSgsv9Kj3F08Nc_iGaA/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season1MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 9</span>
+                        <p id="movieTitleName"><b>Barbarians at the Gate</b></p>
+                        <p id="movieDescription">Salvor faces off with an enemy of the Empire Brothers Day and Dusk
+                            are ate odds, while Brother Dawn wrestles with his truth.</p>
+                        <p id="movieTiming">45 min 8 Oct 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 10th another card -->
+            <div class="card col-md-4">
+                <div class="card-content">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/auWaJ5yHOCG5c_4BPx2BXw/1478x832.webp"
+                        class="img-fluid" alt="movie Image" id="season1MovieImage">
+                    <div id="movieContent">
+                        <span id="episode1">EPISODE 10</span>
+                        <p id="movieTitleName"><b>The Emperor's Peace</b></p>
+                        <p id="movieDescription">
+                            Gaal Dornick leaves her life in Synnax behind when the galaxys greatest mathematician,
+                            Hari Seldon, invites her to Trantor.
+                        </p>
+                        <p id="movieTiming">58 min 24 Sept 2021 U/A 16+ <img
+                                src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                                class="img-fluid" alt="cc" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                            <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnLight-69b645dfbab93de69f4072057e852e19.svg"
+                                class="img-fluid" alt="ad" id="descriptionIcons">
+                        </p>
+                        <span id="playBtnSymbol"><i class="fa-sharp fa-solid fa-play"></i></span>
+                        <span id="dotsSymbol"><i class="fa-solid fa-ellipsis fa-xl"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- another card -->
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <hr>
+        <!-- </div> -->
+    </section>
+    <!-- end of the swiper images -->
+    <div id="trailersMainDiv">
+        <span id="trailerHeading"><b>Trailers</b></span>
+        <div id="smallDivsTrailers">
+            <div id="divForTrailer">
+                <img src="https://releasedate.me/wp-content/uploads/2022/03/foundation-poster.jpg" class="img-fluid"
+                    alt="ad" id="trailerImages1">
+                <span id="trailerTitle">Fate</span>
+                <span id="trailerPlayBtn1"><i class="fa-sharp fa-solid fa-play"></i></span>
+            </div>
+            <div id="divForTrailer">
+                <img src="https://i.ytimg.com/vi/wvOAA1U0li8/maxresdefault.jpg" class="img-fluid" alt="ad"
+                    id="trailerImages2">
+                <span id="trailerTitle">Legacy</span>
+                <span id="trailerPlayBtn2"><i class="fa-sharp fa-solid fa-play"></i></span>
+            </div>
+            <div id="divForTrailer">
+                <img src="https://townsquare.media/site/442/files/2020/06/foundation.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89"
+                    class="img-fluid" alt="ad" id="trailerImages3">
+                <span id="trailerTitle">Future</span>
+                <span id="trailerPlayBtn3"><i class="fa-sharp fa-solid fa-play"></i></span>
+            </div>
+            <div id="divForTrailer">
+                <img src="https://fictionhorizon.com/wp-content/uploads/2021/08/Foundation_poster.jpg" class="img-fluid"
+                    alt="ad" id="trailerImages4">
+                <span id="trailerTitle">Barbarians</span>
+                <span id="trailerPlayBtn4"><i class="fa-sharp fa-solid fa-play"></i></span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end of trailer div -->
+    <!-- start of related div -->
+    <section id="relatedMovies">
+        <span id="relatedHeading"><b>Related</b></span>
+        <div class="row anotherSlider">
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- 2nd another card -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/Ayre02kzYy-UP8Sefqbmdg/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!--  -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/duRc0KX4rW2jDyra_XCrIw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/le6mxqLNaXH47MHIH7stzw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/7Jjh8GOFjFEGzf_OK7cc3g/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Ipie7O2TmsB0ic4zqGVHdA/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/eGnsZyr_h0ivXT0r4jbaew/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/7SeRlnCzKlgeqrg6-ixkig/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/KdlcNbBUOtf7sUXH5z9N8A/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/OMrjvwab1hDBdXk3IdevSg/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/eQUsM1EiOyZq6SXkhjTbnA/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+            <!-- another div starts -->
+            <div class="card col-md-4">
+                <div class="firstRelatedMovie">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/V0JRL07q7_tB-t5fizrZtA/738x416.webp"
+                        class="img-fluid" alt="movie Image" id="relatedMovieImage">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!-- end of related movies div -->
+    <!-- start of displaying cast and crew -->
+    <span id="castAndCrewHeading" style="margin-left: 35px;"><b>Cast & Crew</b></span>
+    <div id="castAndCrewMainDiv">
+        <div id="containerDivCastAndCrew">
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/jW0dBAsyiKtHUmNpt_PmQQ/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage1">
+                <p id="crewName" style="font-size: 13px; padding-top: 5px; margin-bottom: 2px;">Jared Harris</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Hari</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/9j_pm5SUv1ExvhVMS-W-LA/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage2">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Lee Pace
+                </p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Brother Day</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/HMjBo-37sncLd2bXaqNQhQ/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage3">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Lou LIobell</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Gaal</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/-63NachCRK22X7UNESaZHw/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage4">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Leah Harvey</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Salvor</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/bFAgPBVZOt3xbP04AILebw/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage5">
+                <p id="crewName" style="font-size: 13px; padding-top: 5px; margin-bottom: 2px;">Laura Birn</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Demerzel</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/oCgZVZK3n7G4c5yYVWgkCQ/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage6">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Cassian Bilton
+                </p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Brother Dawn</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/RUOxe8cAn1odRIuLkP8J_A/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage7">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Terrence Mann</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Brother Dusk</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/OyfvvjFSfMndRYTWp5kqRg/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage8">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">David S. Goyer</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Executive Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/bImTYTW9fp-ylAAQw-V6Fg/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage9">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Josh Friedman</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Executive Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/FFVRxYA26KH-UbWJM9mEBw/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Dana Goldberg</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Executive Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/DnC6CTz6ShCfTC6hl7CSFw/492x492bb.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">David Ellison</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Executive Producer</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/6qFIg093BMadkb8VDjvy6A/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">David Well</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Creator</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/-TUzZz_50hNZ4-Tz64iUBA/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Azhy Robertson</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Luke Malik</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/0Doy-hi0ve44_De3mIGu_w/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Firas Nassar</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Ahmed Malik</p>
+            </div>
+            <div id="divForCastAndCrew" style="text-align: center;">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/HUeo5Xr-1mvwE7nivAiy6g/492x492ve.webp"
+                    class="img-fluid" alt="ad" id="CrewImage">
+                <p id="crewName" style="font-size: 13px; padding-top:5px; margin-bottom: 2px;">Shioli Kutsuna</p>
+                <p id="characterName" style="font-size: 12px; color: rgb(96, 90, 90);">Mitsuki Yamato</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end of displaying cast and crew -->
+    <div id="trailersMainDiv">
+        <span id="trailerHeading"><b>How to Watch</b></span>
+        <div id="appleTvMainDiv">
+            <div id="appleTvDiv">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" class="img-fluid"
+                    alt="ad" id="appleTvPlus">
+                <p id="startFreeTrail">Start Free Trial</p>
+            </div>
+            <span id="freeTrailText">7 days free, then ₹ 99.00/month.</span>
+        </div>
+    </div>
+    <!-- end of apple tv logo -->
+    <!-- starting of footer page -->
+    <div id="footerPage">
+        <p id="about"><b>About</b></p>
+        <div id="footerTopPart">
+            <div id="invasionDiv">
+                <p id="invasionHeading"><b>Invasion</b></p>
+                <span style="font-size: 13px;">SCI-FI</span>
+                <p id="invasionContent" style="font-size: 15px;">Earth is visited by an alien species that threatens
+                    humanity's existence. Events
+                    unfold in real time through the eyes of five ordinary people across the globe as they struggle to
+                    make sense of the ch<span id="extraContent" style="color:rgb(227, 209, 209);">ao</span><span
+                        id="moreBtn">MORE</span>
+                </p>
+            </div>
+            <div id="invasionRightDiv">
+                <p id="invasionRightDivHeading">
+                    <img src="https://tv.apple.com/assets/badges/common-sense-onLight-small@2x-491e5ca16a8a47cc45cd0e2eb57818c6.png"
+                        class="img-fluid" alt="Tick mark" id="tickMarkImageInInvasion"> <b>14+</b>
+                </p>
+                <p id="commonSense" style="font-size: 13px;margin-top:-10px;margin-bottom:2px;">
+                    COMMON SENSE
+                </p>
+                <p id="commonSenseContent">Slow moving sci-fi drama has strong language, violence.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="footerBottomPart">
+            <div id="leftBottomPart">
+                <p id="information" style="margin-bottom: 1px;"><b>Information</b></p>
+                <p id="genre" style="margin-top: 5px;">Genre <br><span style="font-size:12px;">Sci-fi</span></p><br>
+                <p id="released" style="margin-top: -30px;">Released <br><span style="font-size:12px;">2021</span></p>
+                <br>
+                <p id="rated" style="margin-top: -30px;">Rated <br><span style="font-size:12px;">A</span></p><br>
+                <p id="regionOfOrigin" style="margin-top: -30px;">Region of Origin <br><span
+                        style="font-size:12px;">United States</span></p>
+            </div>
+            <div id="middleBottomPart" style="padding-left:15px;">
+                <p id="languages" style="margin-bottom: 4px;"><b>Languages</b></p>
+                <p id="originalAudio">Original Audio <br><span style="font-size: 12px;">English</span></p><br>
+                <p id="audio" style="margin-top: -30px;">Audio <br><span style="font-size: 12px;">English (AD, AAC,
+                        Dolby 5.1, Dolby Atmos), and 9
+                        more...</span></p><br>
+                <p id="subtitles" style="margin-top: -30px;">Subtitles <br><span style="font-size: 12px;">English (CC,
+                        SDH), and 40 more...</span>
+                </p>
+            </div>
+            <div id="rightBottomPart" style="padding-left: 25px;">
+                <p id="accessibility" style="margin-bottom: 4px;"><b>Accessibility</b></p>
+                <span><img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg"
+                        class="img-fluid" alt="cc" id="descriptionIcons"></span><br>
+                <span id="ccText" style="font-size: 13px;">Closed captions refer to subtitles in
+                    available languages
+                    with the addition of
+                    relevant non-dialogue information.</span><br>
+                <span><img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg"
+                        class="img-fluid" alt="ad" id="descriptionIcons"></span><br>
+                <span id="adText" style="font-size: 13px;">Audio descriptions (AD) refer to a narration track describing
+                    what is happening on
+                    screen to provide context for those who are blind or have low vision.</span>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div id="copyrightIndia" style="display: flex; justify-content: space-between;">
+            <p id="copyrightText" style="padding-left: 30px; font-size:13px; color: rgb(104, 94, 94);">
+                Copyright © 2022 Apple Inc. All Rights Reserved.
+            </p>
+            <p id="indiaText" style="margin-left: 70%; font-size: 12px;">India</p><br>
+        </div>
+        <span id="internetTerms" style="padding-left: 30px;font-size:13px; color: black;">
+            Internet Service Terms &nbsp; Apple TV & Privacy &nbsp; Cookie Warning &nbsp; Support
+        </span>
+    </div>
+    <!-- code for popup box -->
+    <div id="popUp">
+        <div id="invasionInPopUp">
+            <span id="closeBtnForPopUp" ><i class="fa-solid fa-xmark fa-xl"></i></span>
+            <p id="invasionHeadingInPopUp" style="font-size: 20px; margin-bottom: -1px;"><b>Foundation</b></p>
+            <p id="scifiInPopUp">Sci-fi</p>
+            <p id="contentInPopUP">Earth is visited by an alien species that threatens
+                humanity's existence. Events
+                unfold in real time through the eyes of five ordinary people across the globe as they struggle to
+                make sense of the chaos unraveling around them.</p>
+        </div>
+    </div>
+    <!-- end of whole html -->
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 200,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        // another slider
+        $('.anotherSlider').slick({
+            dots: false,
+            infinite: true,
+            speed: 200,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+</body>
+
+</html>
+<script type="module" src="./seriesReview.js"></script>

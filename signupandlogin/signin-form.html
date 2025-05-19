@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/pages.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/d591cda822.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sign In Details</title>
+    <style>
+      body::-webkit-scrollbar {
+        width: 0.3rem;
+        height: 2rem;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(169, 169, 169);
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container" id="form-container">
+        <div class="logo" id="floated-logo">
+          <i class="fa-brands fa-apple fa-2xl"></i>
+        </div>
+        <p class="main-heading">Create Apple ID</p>
+        <form id="form" onsubmit="return getData()" >
+          <input type="text" id="fname" placeholder="First Name" required />
+          <input type="text" id="lname" placeholder="Last Name" required />
+          <input
+            type="text"
+            id="bday"
+            placeholder="Birthday"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            required
+          />
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+          <label for="email">Your email will be your Apple ID</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+            required
+          /> 
+          <div class="terms">
+            <input type="checkbox" name="agree" id="check" required />
+            <div class="check-text">
+              <p class="heading">Agree to Terms & Conditions</p>
+              <p class="country">
+                Country/Region:
+                <select id="country" name="country" required>
+                  <option value="United States">United States</option>
+                  <option value="Afganistan">Afghanistan</option>
+                 
+                  
+                  <option value="France">France</option>
+                  <option value="French Guiana">French Guiana</option>
+                  <option value="French Polynesia">French Polynesia</option>
+                  <option value="French Southern Ter">
+                    French Southern Ter
+                  </option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  
+                  <option value="Iceland">Iceland</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="India">India</option>
+                  <option value="Iran">Iran</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Isle of Man">Isle of Man</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jordan">Jordan</option>
+                  
+                  <option value="Republic of Montenegro">
+                    Republic of Montenegro
+                  </option>
+                  <option value="Republic of Serbia">Republic of Serbia</option>
+                  <option value="Reunion">Reunion</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="St Barthelemy">St Barthelemy</option>
+                  <option value="St Eustatius">St Eustatius</option>
+                  <option value="St Helena">St Helena</option>
+                  <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                  <option value="St Lucia">St Lucia</option>
+                  <option value="St Maarten">St Maarten</option>
+                  <option value="St Pierre & Miquelon">
+                    St Pierre & Miquelon
+                  </option>
+                  <option value="St Vincent & Grenadines">
+                    St Vincent & Grenadines
+                  </option>
+                  <option value="Saipan">Saipan</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="Samoa American">Samoa American</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome & Principe">
+                    Sao Tome & Principe
+                  </option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syria">Syria</option>
+                  <option value="Tahiti">Tahiti</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tokelau">Tokelau</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Erimates">
+                    United Arab Emirates
+                  </option>
+                  <option value="Uraguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Vatican City State">Vatican City State</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Virgin Islands (Brit)">
+                    Virgin Islands (Brit)
+                  </option>
+                  <option value="Virgin Islands (USA)">
+                    Virgin Islands (USA)
+                  </option>
+                  <option value="Wake Island">Wake Island</option>
+                  <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zaire">Zaire</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Continue" id="submit-btn" />
+          </div>
+        </form>
+        <div class="divider"></div>
+        <div class="conditions">
+          By continuing, you acknowledge that you agree to the
+          <a href="https://www.apple.com/legal/internet-services/itunes/"
+            >Apple Media Services Terms and Conditions</a
+          >
+        </div>
+      </div>
+    </main>
+    <script src="../Scripts/signin-form.js"></script>
+  </body>
+</html>

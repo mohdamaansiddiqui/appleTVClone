@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Apple TV+</title>
+    
+    <link
+      rel="icon"
+      href="https://tv.apple.com/assets/favicon/favicon-180-dcb7e297396806943a930ba83f20ea56.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./Styles/index2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/c610c7a2ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+   
+    
+    <div id="navbar">
+      <div id="logo">
+        <a href="../index.html"><img src="https://tv.apple.com/assets/brands/Apple_TV_plus_logo_white-2721485772b7d06c4e33379ce990870e.svg" alt=""></a>
+    </div>
+    <div id="user_nav">
+        <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+
+        <input id="search_input"  type="search" placeholder="Search" >
+        
+        <button id="mic">
+            <i  class="fa-solid fa-microphone"></i>
+        </button>
+
+        <div class="landing_navbar_signin ml-5">
+        <button  id="signin" class="landing_navbar_button d-flex">
+          
+          <div class="logo_text">
+            <a id="sign-in" >Sign In</a>
+          </div>
+        </button>
+      </div>
+
+    </div>
+    </div>
+    <!-- Navbar Ends -->
+    <div id="unhide"></div>
+<div id="hide">
+
+    <!-- Sliding Content Start -->
+    <div id="Slide_body">
+        <div>
+            <video id="my_Video" width="100%"
+                poster="https://wallpapercave.com/wp/wp5135034.jpg" muted loop>
+                <source src="./navbar and footer(home page)/video/SEE — Official Trailer   Apple TV+.mp4" />
+            </video>
+            <div id="over_lay_video">
+                <h3>The Home of Apple Originals </h3>
+                <h4>Enjoy star-studded, award-winning series, films, and more.</h4>
+                
+                
+            </div>
+            <div id="play">
+                <button id="play_button"><img id="play_img"
+                        src="https://findicons.com/files/icons/2315/default_icon/256/media_play.png" width="100%"
+                        alt=""></button>
+
+            </div>
+            <div id="over_lay_vol">
+                <button id="vol_button"><img id="vol_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mute_Icon.svg/2048px-Mute_Icon.svg.png"
+                        width="100%" alt=""></button>
+
+            </div>
+            <div id="slider">
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider1.png" alt="">
+                </div>
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider2.png" alt="">
+                </div>
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider3.png" alt="">
+                </div>
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider4.png" alt="">
+                </div>
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider5.png" alt="">
+                </div>
+                <div class="card_slide">
+                    <img src="./navbar and footer(home page)/images/slider6.png" alt="">
+                </div>
+
+            </div>
+            <!-- 
+             -->
+
+        </div>
+
+    </div>
+
+    <!-- Watch Premieres for Free -->
+    
+    <div class="seasons">
+      <h6>Watch Premieres for Free</h6>
+      <div class="all_seasons_div"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+
+  
+
+<!-- Most popular now -->
+
+<div class="ambition">
+    <h6>Most Popular Now</h6>
+    <div class="innerAmbition"></div>
+  </div>
+
+  <div class="line"><hr /></div>
+
+
+
+
+
+
+
+    <!-- latesh originals -->
+    <div class="latest_originals">
+      <h6>Latest Originals</h6>
+      <div class="inside_latest"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    <!-- SIdney  -->
+
+    <div class="kids_family">
+        <h6>Sidney</h6>
+        <p>A power film honouring the life of the iconic Sidney Poiter.</p>
+        <div class="small_kid_family" id="sidney">
+          <div class="kidFamily_picture">
+            
+            <img 
+              src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/bb/71/8f/bb718f0e-dd6f-df4b-70ad-02183a0db2f4/3a7485e2-49e4-4052-ba33-c55d6fd140e2.lsr/1478x832fe.webp"
+              alt=""
+            />
+          </div>
+          <div class="kidFamily_picture">
+            <img 
+              src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/b2/55/93/b255933c-cc87-12fd-62ab-66b737ff1f56/6238dc8f-6761-4977-9a36-3f08e0209444.lsr/1478x832fe.webp"
+              alt=""
+            />
+          </div>
+          <div class="kidFamily_picture">
+            <img 
+              src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/a7/a9/bf/a7a9bf27-8ea6-bd1f-b306-0aac0ab2840b/b9f3a1e2-3967-4f2c-b5cd-401fbb1fdc2f.lsr/1478x832fe.webp"
+              alt=""
+            />
+          </div>
+          <div class="kidFamily_picture">
+            <img 
+              src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/46/a7/64/46a76485-0900-4234-a7bd-ab9642988187/c73a6db1-8acb-4ee4-9d68-e30625d02a73.lsr/1478x832fe.webp"
+              alt=""
+            />
+          </div>
+          <div class="kidFamily_picture">
+            <img 
+              src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/32/f5/87/32f587fb-45b6-6572-700b-a0a19bc4da6d/befb0184-9ee6-4e72-9778-fcc23b6fb388.lsr/1478x832fe.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+  
+      <div class="line"><hr /></div>
+
+
+
+
+
+
+    <!-- coming soon -->
+    <div class="coming_soon">
+      <h6>Coming Soon</h6>
+      <p>Add to your Up Next watchlist today.</p>
+      <div class="inner_coming_soon"></div>
+    </div>
+    <div class="line"><hr /></div>
+
+    <!-- big slides -->
+    <div class="slides">
+      <div class="big_slides"></div>
+    </div>
+
+     <!-- the family dinamics or invasion -->
+     <div class="invasion">
+      <video
+      
+        id="video_background"
+        poster="https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/27/b3/f9/27b3f912-b6c3-a30b-f03c-f4ff04baae70/4e323025-349e-41f1-afa5-606bcdfa2d85.png/1650x619sr.webp"
+        preload="true"
+        autoplay
+        muted
+      >
+        <source src="./seriesReview/foundationTrailer.mp4" />
+      </video>
+      <div class="innerInvasion">
+        <h1>Foundation</h1>
+        <p>
+          An alien invasion is seen through the different perspectives of
+          various people on different continents across the world.
+        </p>
+        <div class="sliderBox"></div>
+      </div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+
+    <!-- Thrilling -->
+
+    <div class="page_to_screen">
+      <h6>Thrilling Series</h6>
+      <p>Stries filled with crimes,secretes and shocking mysteries.</p>
+      <div class="insidePageToScreen"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    
+
+    <!-- Laugh out loud -->
+
+    <div class="findingVoices">
+      <h6>Laugh Out Loud</h6>
+      <p>Sharp and smart comedy series that'll have you in stitches</p>
+      <div class="innerFindingVoices"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    <!-- extraordinary People  -->
+
+    <div class="join_the_conversation">
+      <h6>Extraordinary People</h6>
+      <p>Remarkable stories about remarkable humanity.</p>
+      <div class="inside_conversation"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    <!-- all feature films -->
+
+    <div class="all_feature_film">
+        <h6>All Feature Films</h6>
+        <div class="innerFeatureFilm"></div>
+      </div>
+  
+      <div class="line"><hr /></div>
+
+      <!-- all drama series  -->
+
+    <div class="dramaSeries">
+        <h6>All Drama Series</h6>
+        <div class="innerDramaSeries"></div>
+      </div>
+  
+      <div class="line"><hr /></div>
+
+    <!-- the power of friendship -->
+
+    <div class="friendship">
+      <h6>The Power of Friendship</h6>
+      <div class="innerFriendship"></div>
+    </div>
+
+    
+
+    
+
+    <!-- SEE -->
+    <div class="big_pachinko">
+      <h6>SEE</h6>
+      <p>Baba Voss faces a deadly new weapon in the epic series’ final chapter.</p>
+      <div class="small_pachinko" id="see">
+        <div class="pachinko_picture">
+          <a  ><img
+            src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/79/74/84/7974847a-3952-f3ff-0ecb-27df2d767520/8d3dec6e-3743-47e6-b2da-46c79dec01e6.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+          
+        </div>
+        <div class="pachinko_picture">
+          <a ><img
+            src="https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/3a/f2/23/3af2237c-b647-db35-e023-52463bf49ae7/e96143e1-5c88-46b7-8a49-20d7bc60b4d1.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+          
+        </div>
+        <div class="pachinko_picture">
+          <a > <img
+            src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/c5/14/fd/c514fd7b-84a3-0568-cadb-2fdc1238c843/8e6e3327-ee94-4d4b-bfc6-5ea82cecb7c2.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+         
+        </div>
+        <div class="pachinko_picture">
+          <a ><img
+            src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/2e/ed/a1/2eeda1e5-46fe-3a99-4e38-60d701f707e5/f1bc9f34-4399-4618-92ff-44be7dd53a1f.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+          
+        </div>
+        <div class="pachinko_picture">
+          <a > <img
+            src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/ab/3a/89/ab3a89c5-10e5-aed7-11ed-a8124d569acd/9fc86d8b-b8be-4d89-a590-b8b7841760ee.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+   
+
+    <!-- all comedy series  -->
+
+    <div class="all_comedy_series">
+      <h6>All Comedy Series</h6>
+      <div class="innerComedySeries"></div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    <!-- fun for all  -->
+
+    <div class="fun_for_all">
+        <h6>Fun for All</h6>
+        <div class="innerFunForAll"></div>
+      </div>
+      <div class="line"><hr /></div>
+    <!-- our amazing planet  -->
+
+    <div class="amazing_planet">
+      <h6>Sago Mini Friends</h6>
+      <p>Spend time with the colourful crew from the popular preschool app.</p>
+      <div class="small_amazing_planet" id="sago">
+        <div  class="planet_picture">
+          <a  href="">
+            <img
+              src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/b3/b1/f9/b3b1f9d0-444a-1983-dc10-deb97565e25e/a213db5b-9681-48b2-849e-ea9c3b2eb954.lsr/1478x832fe.webp"
+              alt=""
+            />
+
+        </a>
+        </div>
+        <div class="planet_picture">
+          <a  href=""><img x
+            src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/71/9c/42/719c4230-3399-545b-6bd6-25f84652ea25/8516cd57-8c72-46fe-95dd-7ba63b4d8bca.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+          
+        </div>
+        <div class="planet_picture">
+          <a  href=""><img 
+            src="https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/f6/32/c3/f632c3b6-35d4-3c20-f26f-05f49904b97a/6c1178df-8f81-42df-9590-6a46d6d5431b.lsr/1478x832fe.webp"
+            alt=""
+          /></a>
+          
+        </div>
+        <div class="planet_picture">
+          <a  href="">
+            <img
+            src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/82/18/aa/8218aa40-1878-c4c7-611e-b9ec1759028b/45d0443e-25b5-40be-840c-9207800c18f5.lsr/1478x832fe.webp"
+            alt=""
+          />
+          </a>
+         
+        </div>
+        <div  class="planet_picture">
+         <a href="">
+          <img
+          src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/52/bf/95/52bf95dc-2470-11ad-251e-692a5e19a85f/5d758f85-e7c4-40b9-a20c-0795965f87c0.lsr/1478x832fe.webp"
+          alt=""
+        />
+           
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"><hr /></div>
+
+    <!-- all nonfiction series  -->
+
+    <div class="all_nonfiction">
+      <h6>All Nonfiction Series</h6>
+      <div class="innerNonfiction"></div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    <!-- footer  -->
+    <div id="up_footer">
+
+      <img src="https://tv.apple.com/assets/brands/TV_App_Logo-d343000dfd3ca454ca8705a7aa7dcf4f.png" alt="">
+
+      <div id="top">
+          <h1>
+              Watch Apple Tv+ here or anywhere
+          </h1>
+          <h3>
+              Find Apple TV+ on the Apple TV app, available on <br> Apple Devices, smart TVs and more.
+          </h3>
+          <a href="">see all supported devices &nbsp;></a>
+
+      </div>
+      <div id="device_container">
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/product_landing_apple_tv_wht-9610e73e2ef117d35da65eed60d2624a.png"
+                  alt="">
+              <h3>Apple TV</h3>
+
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/product_landing_iPhone_wht-0adcded885905e1a22bfc7ae9bf45fa8.png"
+                  alt="">
+              <h3>iPhone</h3>
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/product_landing_iPad_wht-ac93596ed7aeb5e1c15ba18bcb7bfd13.png"
+                  alt="">
+              <h3>iPad</h3>
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/product_landing_mac_wht-37e6f73080a15fe8a35b85e7ba8f5468.png"
+                  alt="">
+              <h3>Mac</h3>
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/product_landing_airplay_wht-f348507fa5bdc6b005b126f0654aa663.png"
+                  alt="">
+              <h3>AirPlay</h3>
+          </div>
+      </div>
+      <div id="down">
+          <h1>
+              See it on your big screen
+          </h1>
+          <a href="">set up your device &nbsp;></a>
+          <a href="">Explore compatible device &nbsp;></a>
+
+      </div>
+      <div id="down_device_container">
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/banner_usb_lrg_wht-67ed29cf6e5f5add9b2814937f976197.png"
+                  alt="">
+              <h3>Streaming Devices</h3>
+              <p>Roku</p>
+              <p>Firetv</p>
+              <p>Google TV</p>
+              <p>Android TV</p>
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/banner_tv_lrg_wht-e0ef12292435df4d9416312f322dbe32.png"
+                  alt="">
+              <h3>Smart TVs</h3>
+              <p>Samsung</p>
+              <p>LG</p>
+              <p>Sony</p>
+
+
+          </div>
+          <div class="device">
+              <img src="https://tv.apple.com/assets/icons/banner_controller_lrg_wht-5eca7993879258c2ff5e8425055643b6.png"
+                  alt="">
+              <h3>Gaming Consoles</h3>
+              <p>PlayStation</p>
+              <p>Xbox</p>
+          </div>
+
+      </div>
+      <span>Devices availability varies by country or region</span>
+
+  </div>
+  <div id="down_footer">
+      <h1>
+          Questions? Answers.
+      </h1>
+      <div id="Qna_container">
+          <div id="q1" class="QNA_sub_container">
+              <div>
+                  <h2>What is Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me1">
+              <h3>Apple Tv+ is streaming service from Apple. It features exclusive Apple
+                  Original shows and movies from some of the industry's top talent,
+                  with new premieres arriving each month. Browse all of the available content on
+                  Apple TV+ inside the Apple TV app on the "Apple TV+" tab or here
+                  on <a href="">tv.apple.com</a>
+              </h3>
+          </div>
+          <hr>
+          <div id="q2" class="QNA_sub_container">
+              <div>
+                  <h2>What does Apple TV+ include?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me2">
+              <h3>
+                  Apple TV+ includes Apple Original films and series--which
+                  are original shows and movies made exclusively for Apple.
+                  It also includes free access for anyone to watch Friday
+                  Night Baseball, provided through Apple TV+ in partnership
+                  with MLB(Major League Baseball). New shows and movies are
+                  being added to the streaming service frequently, so Browse
+                  inside the Apple TV app or visit <a href="">tv.apple.com</a>
+                  often to see new releases.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q3" class="QNA_sub_container">
+              <div>
+                  <h2>Where can I watch Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me3">
+              <h3>
+                  Apple TV+ is an exclusive streaming subscription
+                  available in the Apple TV app. You can find the Apple
+                  TV app on many of your favourite Apple devices. Plus,
+                  find the app on many smart TVs, streaming devices,
+                  game consoles and some select cable boxes.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q4" class="QNA_sub_container">
+              <div>
+                  <h2>Can I watch Apple TV+ on my phone?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me4">
+              <h3>
+                  Apple TV+ is a streaming service that lives inside the Apple TV app — an app that brings Apple TV+
+                  together with Apple TV app on iPhone, iPad, Apple TV 4K or HD, plus on many streaming devices and
+                  smart TVs like Roku, Samsung, LG, Panasonic and more
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q5" class="QNA_sub_container">
+              <div>
+                  <h2>How to watch Apple TV+ on Android or Windows?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me5">
+              <h3>
+                  The easiest way to watch Apple TV+ on an Android phone or Windows device is to visit. There, you can
+                  still sign in with an Apple ID, add Apple Original shows and movies to your Up Next watchlist and
+                  keep track of what you are watching.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q6" class="QNA_sub_container">
+              <div>
+                  <h2>What movies are on Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me6">
+              <h3>
+                  There are many movies to choose from on Apple TV+ and new Apple Original films are being added
+                  frequently. The best way to see what movies are on Apple TV+ is to browse the Apple TV+ tab inside
+                  the Apple TV app or here on . You will find many award-winning films to choose from, like Academy
+                  Award-winner for Best Picture CODA or the critically-acclaimed The Tragedy of Macbeth. Or choose
+                  from hits like Greyhound, Swan Song, Wolfwalkers and more.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q7" class="QNA_sub_container">
+              <div>
+                  <h2>What can I watch on Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me7">
+              <h3>
+                  More Apple Original series are being added to the TV app frequently, so check back often to discover
+                  new TV shows on Apple TV+. Start by browsing in the Apple TV+ tab on the Apple TV app or here on .
+                  You will find hits like the Emmy-winning Ted Lasso, critically-acclaimed The Morning Show and sci-fi
+                  epic Foundation, plus new and popular shows like Severance, Slow Horses and WeCrashed.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q8" class="QNA_sub_container">
+              <div>
+                  <h2>How do I get Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me8">
+              <h3>
+                  You can subscribe to Apple TV+ inside the Apple TV app on your device, and you can start watching
+                  videos.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q9" class="QNA_sub_container">
+              <div>
+                  <h2>Can I get Apple TV+ for free?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me9">
+              <h3>
+                  There are a few ways to try Apple TV+ for free. First, try 7 days of Apple TV+ for free by starting
+                  a trial in the Apple TV app on your iPhone, iPad, Apple TV 4K or HD, or on any streaming device. If
+                  you have recently purchased Apple hardware that includes a 12‑month, 6‑month, 3‑month or other
+                  complimentary free trial of Apple TV+, this offer will automatically appear in the Apple TV app when
+                  signed in with the Apple ID associated with your recent hardware purchase.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q10" class="QNA_sub_container">
+              <div>
+                  <h2>How do I cancel Apple TV+?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me10">
+              <h3>
+                  The easiest way to cancel an Apple TV+ subscription is to go to Settings on an Apple device like an
+                  iPhone. Open the app, choose your name, then select Subscriptions and choose Apple TV+. You can also
+                  manage your Apple TV+ subscription at . Sign in and choose the account icon in the top right corner.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q11" class="QNA_sub_container">
+              <div>
+                  <h2>How do I share Apple TV+ with my family?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me11">
+              <h3>
+                  Sharing Apple TV+ through the Apple TV app uses Family Sharing, Apple system that helps you to
+                  share multiple Apple Services through your Apple ID. First, you need to , then you will be able to
+                  share Apple TV+ with your family group.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q12" class="QNA_sub_container">
+              <div>
+                  <h2>How do I share Apple TV+ with my family?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me12">
+              <h3>
+                  Sharing Apple TV+ through the Apple TV app uses Family Sharing, Apples system that helps you to
+                  share multiple Apple Services through your Apple ID. First, you need to , then you will be able to
+                  share Apple TV+ with your family group.
+              </h3>
+
+          </div>
+          <hr>
+          <div id="q13" class="QNA_sub_container">
+              <div>
+                  <h2>Is Apple TV+ accessible?</h2>
+              </div>
+              <div><i class="fa-solid fa-2x fa-caret-down"></i></div>
+
+          </div>
+          <div id="see_me13">
+              <h3>
+                  Apple TV+ is part of the Apple TV app, which includes many accessibility features — so you only have
+                  to focus on enjoying Apple Original shows and movies. All Apple Originals support Closed Captions
+                  and SDH (subtitles for the Deaf and Hard of Hearing) in addition to audio descriptions; plus the
+                  entire app supports VoiceOver, Apple’s built-in screenreader. Bold Text, Increase Contrast and
+                  Reduce Motion settings are also available. Subtitles are supported for 40+ languages for all Apple
+                  TV+ titles. Learn about more accessibility options in the Apple TV app.
+              </h3>
+
+          </div>
+
+      </div>
+
+
+
+  </div>
+  
+ 
+
+    
+   
+  </div>
+  <div id="unhide"></div>
+
+
+  <div class="backdrop"></div>
+  <div class="modal">
+    <div class="closeBtn">
+      <button aria-label="close" class="close-modal_btn"></button>
+    </div>
+    <div class="modal-pages">
+      <iframe src="./signupandlogin/sign-in.html"
+       width="100%"
+       height="100%"
+       title="Sign in"
+       id="modal-iframe"
+      
+      ></iframe>
+    </div>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="./Scripts/mainpage.js"></script>
+    
+  </body>
+</html>
+
+
+<script>
+ 
+  
+</script>
